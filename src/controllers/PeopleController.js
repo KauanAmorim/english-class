@@ -24,6 +24,16 @@ class PeopleController {
             return res.status(500).json({ error: err.message })
         }
     }
+
+    static async createPerson(req, res) {
+        try {
+            const person = req.body
+            const newPerson = await database.People.create(person);
+            return res.status(201).json(newPerson);
+        } catch (err) {
+            return res.status(500).json({ error: err.message })
+        }
+    }
 }
 
 module.exports = PeopleController;

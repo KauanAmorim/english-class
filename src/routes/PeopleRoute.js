@@ -5,6 +5,7 @@ const router = express.Router();
 
 router
     .get('/people', PeopleController.getPeople)
-    .get('/people/:id', PeopleController.getPerson);
+    .get('/people/:id', PeopleController.getPerson)
+    .post('/people', PeopleController.createPerson)
 
 module.exports = router;
