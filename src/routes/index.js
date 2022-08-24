@@ -1,5 +1,7 @@
-const PeopleRoute = require('./PeopleRoute.js');
+const PeopleRoute = require('./PeopleRoute');
+const ClassesRoute = require('./ClassesRoute');
 
 module.exports = [
-    PeopleRoute
+    PeopleRoute,
+    ClassesRoute,
 ]
