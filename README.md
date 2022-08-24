@@ -1,1 +1,1 @@
-# sequelize-app
+# English Class
